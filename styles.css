@@ -218,5 +218,26 @@ body{
     background-color: #a489ec;
     color: white;
    }
+   #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
   
+  #customers td, #customers th {
+    border: 1px solid #a489ec;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color:#a489ec;}
+  
+  #customers tr:hover {background-color:#a489ec;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #a489ec;
+    color: #a489ec;
+  }
   

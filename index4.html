@@ -1,0 +1,106 @@
+<html>
+    <head>
+        
+      <style>
+        .nine h1 {
+  text-align:center; font-size:50px; text-transform:uppercase; color:#f8f8f8; letter-spacing:1px;
+  font-family:"Playfair Display", serif; font-weight:400;
+}
+.nine h1 span {
+  margin-top: 5px;
+    font-size:15px; color:#f8f8f8; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.nine h1 span:after,.nine h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+ 
+        body{
+            background-image: url('https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        .btn {
+ --color: #f8f8f8;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+.btn::after, .btn::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.btn::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+ color: var(--color2);
+}
+
+.btn:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+      </style>
+    </head>
+    <body>
+      <div class="nine">
+        <h1>𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑪𝑨𝑹𝑺 𝑾𝑶𝑹𝑳𝑫<span>𝑩𝒀 𝑨𝑩𝑫𝑬𝑳𝑵𝑨𝑺𝑬𝑹</span></h1>
+       </div>
+     <div style="text-align: center;">
+      <h1 style="color: #f8f8f8;" style="font-size:40px;">يتمضن هذا الموقع على معلومات تخص اشهر انواع السيارات واكثرها استعمالا</h1>
+     </div>
+     <div style="text-align: center;">
+      <button class="btn" > 
+        <a href="index1.html" data-text="let's start" style="color:rgb(154, 161, 255);">let's start</a>
+     </button>
+     </div>
+    </body>
+</html>

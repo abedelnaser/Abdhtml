@@ -1,0 +1,16 @@
+var obj1={name:"BMW",info:"BMW is a German luxury automobile manufacturer known for producing high-performance vehicles. They offer a wide range of car models, including sedans, coupes, convertibles, SUVs, and electric vehicles. BMW cars are known for their distinctive design, advanced technology, and driving dynamics. The company also has a performance division called BMW M, which produces high-performance variants of their regular models. BMW has a global presence and a strong motorsport heritage."}
+var obj2={name:"MERCEDES",info:"Mercedes-Benz is a renowned German luxury car manufacturer known for producing high-quality vehicles. Their cars feature elegant designs, luxurious interiors, and advanced technology. Mercedes-Benz offers a diverse range of models, including sedans, coupes, convertibles, SUVs, and electric vehicles. They prioritize performance and comfort, and their vehicles are often equipped with cutting-edge features and safety systems. Mercedes-Benz has a global presence and is synonymous with luxury and prestige in the automotive industry."}
+var obj3={name:"AUDI",info:"Audi is a German luxury car manufacturer known for its stylish design, advanced technology, and performance-oriented vehicles. Audi cars feature sleek exteriors, elegant interiors, and incorporate cutting-edge technology and driver-assistance systems. The brand is recognized for its Quattro all-wheel drive system, which enhances handling and stability. Audi offers a range of models, including sedans, coupes, SUVs, and electric vehicles. They have a global presence and are synonymous with premium automotive craftsmanship."}
+var obj4={name:"TOYOTA",info:"Toyota is a well-known Japanese car manufacturer recognized for its reliability, durability, and fuel efficiency. They offer a diverse range of vehicles, including sedans, hatchbacks, SUVs, trucks, and hybrids. Toyota cars are known for their high-quality construction, low maintenance costs, and strong resale value. The brand prioritizes safety, advanced technology, and eco-friendly options. Toyota has a global presence and is committed to producing vehicles that meet the needs of a wide range of drivers."}
+var obj5={name:"HYUNDAI",info:"Hyundai is a South Korean automobile manufacturer known for producing stylish, reliable, and feature-packed vehicles. They offer a diverse range of cars, including sedans, hatchbacks, SUVs, and electric vehicles. Hyundai cars are known for their attractive designs, comfortable interiors, and advanced safety features. The brand focuses on delivering value for money, providing competitive pricing and a generous warranty. Hyundai has gained global recognition for its commitment to quality, innovation, and customer satisfaction."}
+var data = [obj1,obj2,obj3,obj4,obj5];
+var rows ="";
+function createTable(){
+    for(var i=0; i<data.length; i++){
+        var row = "<tr><td>"+data[i].name+"</td>"+
+        "<td>"+ data[i].info+"</td></tr>";
+        rows = rows + row;
+        
+    }
+    document.getElementById("customers").innerHTML = rows;
+}
